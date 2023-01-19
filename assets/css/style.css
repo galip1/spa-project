@@ -1,0 +1,60 @@
+body {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*******NAVBAR**********/
+.container-fluid {
+  background-color: rgb(248, 248, 248);
+}
+.jung {
+  font-weight: bold;
+  font-size: 300;
+  margin: 0 3rem;
+}
+.container-fluid .nav-pills .nav-item .nav-link {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1.3rem 3.2rem;
+  border-radius: 0;
+}
+.container-fluid .nav-pills .nav-item:first-child {
+  background-color: yellow;
+}
+.container-fluid .nav-pills .nav-item .nav-link:hover {
+  background-color: white;
+}
+
+/***********corousel slider*/
+
+.main-slider .carousel-item::before {
+  content: "";
+  background-image: linear-gradient(30deg, var(--color4), var(--color3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.main-slider .carousel-caption {
+  z-index: 6;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.main-slider .carousel-caption h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.main-slider .carousel-caption p {
+  margin-bottom: 2rem;
+}
